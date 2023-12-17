@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Photo Studio - Courses</title>
+    <!-- Add your preferred styles or link to an external stylesheet here -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            color: #3498db; /* You can change the color based on your preference */
+        }
+        .course {
+            border: 2px solid #ecf0f1; /* You can change the color based on your preference */
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .payment {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Your Photo Studio</h1>
+    <h2>Photography and Videography Courses</h2>
+
+    <div class="course">
+        <h3>Photography Course</h3>
+        <p>Learn the art of photography with our experienced instructors.</p>
+        <p>Cost: ₹5000</p>
+        <button onclick="makePayment('Photography')">Pay Now</button>
+    </div>
+
+    <div class="course">
+        <h3>Videography Course</h3>
+        <p>Master the skills of videography and storytelling through video.</p>
+        <p>Cost: ₹5000</p>
+        <button onclick="makePayment('Videography')">Pay Now</button>
+    </div>
+
+    <div class="payment" id="paymentMessage"></div>
+
+    <script>
+        function makePayment(course) {
+            window.location.href = 'https://upilinks.in/payment-link/upi1662119813';      
+        }
+    </script>
+</body>
+</html>
